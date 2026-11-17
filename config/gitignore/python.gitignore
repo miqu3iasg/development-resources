@@ -1,0 +1,84 @@
+# Python
+# Starting point. Copy to the project root as .gitignore and adjust there.
+
+# Bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.hypothesis/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging and build
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+pip-wheel-metadata/
+.installed.cfg
+MANIFEST
+
+# Tooling
+.tox/
+.nox/
+.pdm-python
+.pdm-build/
+__pypackages__/
+.uv-cache/
+
+# Test and coverage reports
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+junit.xml
+nosetests.xml
+
+# Documentation build
+docs/_build/
+
+# Logs
+*.log
+logs/
+
+# Secrets and local configuration: never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+local_settings.py
+instance/
+
+# Local data
+*.sqlite3
+*.db
+
+# IntelliJ / PyCharm
+.idea/*
+*.iml
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~

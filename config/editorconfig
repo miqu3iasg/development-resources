@@ -1,0 +1,43 @@
+# EditorConfig: https://editorconfig.org
+# Starting point. Copy to the project root and adjust there.
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Languages with 4-space indentation and a line limit
+[*.java]
+max_line_length = 120
+
+[*.py]
+max_line_length = 88
+
+# Web, data and config formats
+[*.{js,jsx,ts,tsx,mjs,cjs,json,jsonc,yml,yaml,html,css,scss,toml}]
+indent_size = 2
+
+# Markdown: trailing double space is a hard line break
+[*.md]
+trim_trailing_whitespace = false
+
+# Tabs are part of the syntax
+[{Makefile,*.mk,go.mod,*.go}]
+indent_style = tab
+
+# Windows scripts require CRLF
+[*.{bat,cmd}]
+end_of_line = crlf
+
+# Generated or vendored: never reformat
+[{package-lock.json,pnpm-lock.yaml,yarn.lock,gradle/wrapper/**}]
+indent_style = unset
+indent_size = unset
+trim_trailing_whitespace = unset
+insert_final_newline = unset
+end_of_line = unset
+charset = unset
